@@ -18,7 +18,6 @@ public class RunescapeCalculator extends javax.swing.JFrame {
        DefaultListModel listModel;
        public static Map<String, Long> StoredXp = null;
        
-
        
      /**
      * Creates new form RunescapeCalculator
@@ -27,6 +26,9 @@ public class RunescapeCalculator extends javax.swing.JFrame {
        initComponents();
        comboboxSkills.setSelectedItem("Agility");
        calculator = new AgilityCalculator();
+       
+       DBHandler.createNewDatabase("Data");
+       DBHandler.connect("Data");
     }
     
 
