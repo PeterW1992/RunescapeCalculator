@@ -1,0 +1,106 @@
+Free-Play MonstersRat|24.8|0.0
+Free-Play MonstersChicken|24.8|3.0
+Free-Play MonstersGoblin|25.0|5.0
+Free-Play MonstersMan|34.0|0.0
+Free-Play MonstersCow|30.0|8.0
+Free-Play MonstersMugger|12.0|0.0
+Free-Play MonstersMonk|47.0|0.0
+Free-Play MonstersScorpion|34.0|17.0
+Free-Play MonstersGuard|35.0|0.0
+Free-Play MonstersBlack Bear|39.6|11.0
+Free-Play MonstersYoung grotworm|46.5|12.0
+Free-Play MonstersGrotworm|206.0|28.0
+Free-Play MonstersMature grotworm|692.3|360.5
+Free-Play MonstersGrizzly Bear|50.4|13.4
+Free-Play MonstersFlesh Crawler|64.5|17.4
+Free-Play MonstersGhost|40.8|25.0
+Free-Play MonstersHill Giant|151.5|39.0
+Free-Play MonstersBlack Knight|51.0|0.0
+Free-Play MonstersWhite Knight (Lv 50)|54.0|0.0
+Free-Play MonstersIce Warrior|99.0|27.0
+Free-Play MonstersMoss Giant|240.0|60.0
+Free-Play MonstersAnkou|176.0|34.0
+Free-Play MonstersIce Giant|190.0|50.0
+Free-Play MonstersLesser Demon|262.3|90.8
+Free-Play MonstersGreater Demon|404.1|142.0
+Free-Play MonstersCockroach soldier|77.0|0.0
+Free-Play MonstersHellhound|379.8|98.6
+Free-Play MonstersDeadly Red Spider|419.1|0.0
+Members MonstersGoat|72.0|0.0
+Members MonstersBilly Goat|33.9|0.0
+Members MonstersWhite Wolf|50.0|44.0
+Members MonstersKalphite Worker|179.9|62.0
+Members MonstersMagic Axe|192.0|0.0
+Members MonstersGuard Dog|51.9|14.0
+Members MonstersBaby Blue Dragon|101.0|50.0
+Members MonstersGhoul|145.3|50.0
+Members MonstersRock Crab|243.0|0.0
+Members MonstersYak|70.0|50.0
+Members MonstersEarth Warrior|233.0|60.0
+Members MonstersOgre|145.0|28.0
+Members MonstersCrocodile|100.0|35.0
+Members MonstersOtherworldly Being|138.0|36.0
+Members MonstersShadow Warrior|145.2|39.0
+Members MonstersGreen Dragon|362.0|175.0
+Members MonstersArmoured zombie|469.0|124.0
+Members MonstersGrotworm|107.8|28.0
+Members MonstersKalphite Soldier|227.7|78.8
+Members MonstersMountain Troll|192.0|52.0
+Members MonstersExperiment|56.0|0.0
+Members MonstersTortoise|120.0|0.0
+Members MonstersWerewolf|184.0|35.0
+Members MonstersElf Warrior (Lv 120)|269.4|73.6
+Members MonstersSuqah|192.0|49.8
+Members MonstersElf Warrior (Lv 128)|327.9|89.4
+Members MonstersBlue Dragon|289.8|98.2
+Members MonstersFire Giant|445.9|169.2
+Members MonstersBronze Dragon|406.0|130.0
+Members MonstersMonkey Guard|344.4|130.0
+Members MonstersRed dragon|566.4|220.8
+Members MonstersBlack Demon|923.0|309.0
+Members MonstersIron Dragon|693.9|257.2
+Members MonstersBlack Dragon|751.0|257.6
+Members MonstersLiving rock protector|379.8|98.6
+Members MonstersSteel Dragon|766.3|367.8
+Members MonstersLiving rock striker|379.8|98.6
+Members MonstersLiving rock patriarch|824.0|320.0
+Slayer MonstersSlayer Level 01 - TzHaar-Ket/Xil|312.3|81.0
+Slayer MonstersSlayer Level 01 - Mature Grotworm|283.2|73.6
+Slayer MonstersSlayer Level 05 - Crawling Hand|15.4|8.0
+Slayer MonstersSlayer Level 07 - Cave Bug|37.0|7.5
+Slayer MonstersSlayer Level 10 - Cave Crawler|99.3|25.8
+Slayer MonstersSlayer Level 15 - Banshee|81.7|15.5
+Slayer MonstersSlayer Level 17 - Cave Slime|44.0|11.4
+Slayer MonstersSlayer Level 22 - Desert Lizard|56.0|14.0
+Slayer MonstersSlayer Level 25 - Cockatrice|76.0|20.0
+Slayer MonstersSlayer Level 30 - Pyrefiend|66.0|34.2
+Slayer MonstersSlayer Level 32 - Mogre|104.0|27.0
+Slayer MonstersSlayer Level 33 - Harpie Bug Swarm|138.0|35.0
+Slayer MonstersSlayer Level 35 - Wall Beast|79.8|27.0
+Slayer MonstersSlayer Level 37 - Killerwatt|175.0|34.0
+Slayer MonstersSlayer Level 39 - Molanisk|148.0|52.0
+Slayer MonstersSlayer Level 40 - Basilisk|221.7|84.0
+Slayer MonstersSlayer Level 40 - Terror Dog|198.0|79.0
+Slayer MonstersSlayer Level 42 - Fever Spider|259.0|91.0
+Slayer MonstersSlayer Level 45 - Infernal Mage|288.0|115.0
+Slayer MonstersSlayer Level 47 - Brine rat|130.0|45.0
+Slayer MonstersSlayer Level 50 - Bloodveld|139.9|34.5
+Slayer MonstersSlayer Level 52 - Jelly|332.0|79.0
+Slayer MonstersSlayer Level 55 - Turoth|140.75|36.6
+Slayer MonstersSlayer Level 57 - Mutated zygomite|119.7|31.0
+Slayer MonstersSlayer Level 58 - Cave Horror|221.7|57.6
+Slayer MonstersSlayer Level 60 - Aberrant Spectre|288.0|115.0
+Slayer MonstersSlayer Level 65 - Dust Devil|416.2|139.0
+Slayer MonstersSlayer Level 70 - Kurask|349.6|121.2
+Slayer MonstersSlayer Level 72 - Skeletal Wyvern|1024.3|537.0
+Slayer MonstersSlayer Level 73 - Jungle strykewyrm|554.6|185.6
+Slayer MonstersSlayer Level 75 - Gargoyle|598.5|207.4
+Slayer MonstersSlayer Level 77 - Desert strykewyrm|846.4|316.8
+Slayer MonstersSlayer Level 78 - Aquanite|419.0|109.0
+Slayer MonstersSlayer Level 80 - Nechryael|661.0|264.6
+Slayer MonstersSlayer Level 80 - Mutated Jadinko Baby|399.0|103.6
+Slayer MonstersSlayer Level 85 - Abyssal Demon|693.9|291.0
+Slayer MonstersSlayer Level 86 - Mutated Jadinko Guard|440.7|114.4
+Slayer MonstersSlayer Level 90 - Dark Beast|889.2|348.2
+Slayer MonstersSlayer Level 91 - Mutated Jadinko Male|510.9|132.8
+Slayer MonstersSlayer Level 93 - Ice strykewyrm|934.2|485.6

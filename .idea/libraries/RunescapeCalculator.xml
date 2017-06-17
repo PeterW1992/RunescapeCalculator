@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RunescapeCalculator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/RunescapeCalculator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
