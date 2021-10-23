@@ -1,0 +1,101 @@
+Ruby harvest (Barehanded), 300.0, 80, Barehanded
+Sapphire glacialis (Barehanded), 400.0, 85, Barehanded
+Snowy knight (Barehanded), 500.0, 90, Barehanded
+Black warlock (Barehanded), 650.0, 95, Barehanded
+CatchingLevel 01 - Crimson Swift, 34.0, 1, Bird-Catching
+CatchingLevel 05 - Golden Warbler, 47.6, 5, Bird-Catching
+CatchingLevel 09 - Copper Longtail, 61.0, 9, Bird-Catching
+CatchingLevel 11 - Cerulean Twitch, 64.6, 11, Bird-Catching
+CatchingLevel 19 - Tropical Wagtail, 95.2, 19, Bird-Catching
+CatchingLevel 39 - Wimpy Bird, 167.0, 39, Bird-Catching
+Baby Gecko, 100.0, 27, Box Traps
+Baby Monkey, 100.0, 27, Box Traps
+Baby Raccoon, 100.0, 27, Box Traps
+Ferret, 115.2, 27, Box Traps
+Platypus, 205.0, 48, Box Traps
+Chinchompa, 198.4, 53, Box Traps
+Penguin (Box), 150.0, 56, Box Traps
+Red Chinchompa, 265.0, 63, Box Traps
+Pawya, 400.0, 66, Box Traps
+Grenwall, 1100.0, 77, Box Traps
+CatchingLevel 15 - Ruby Harvest, 24.0, 15, Butterfly-Catching
+CatchingLevel 25 - Sapphire Glacialis, 34.0, 25, Butterfly-Catching
+CatchingLevel 35 - Snowy Knight, 44.0, 35, Butterfly-Catching
+CatchingLevel 45 - Black Warlock, 54.0, 45, Butterfly-Catching
+Wild Kebbit, 128.0, 23, Deadfall Traps
+Barb-Tailed Kebbit, 168.0, 33, Deadfall Traps
+Prickly Kebbit, 204.0, 37, Deadfall Traps
+Diseased Kebbit, 225.0, 44, Deadfall Traps
+Penguin (Deadfall), 210.0, 51, Deadfall Traps
+Sabre-Toothed Kebbit, 200.0, 51, Deadfall Traps
+Protomastyx, 55.0, 1, Dungeon Traps
+Submastyx, 94.5, 10, Dungeon Traps
+Paramastyx, 164.0, 20, Dungeon Traps
+Archaemastyx, 247.0, 30, Dungeon Traps
+Dromomsatyx, 330.0, 40, Dungeon Traps
+Spinomastyx, 435.5, 50, Dungeon Traps
+Gallimastyx, 519.0, 60, Dungeon Traps
+Stegomastyx, 599.5, 70, Dungeon Traps
+Megamastyx, 673.0, 80, Dungeon Traps
+Tyrannomastyx, 745.5, 90, Dungeon Traps
+Spotted Kebbit, 104.0, 43, Falconry
+Dark Kebbit, 132.0, 57, Falconry
+Dashing Kebbit, 156.0, 69, Falconry
+Baby Impling (Gielinor), 25.0, 17, Implings in Gielinor
+Young Impling (Gielinor), 65.0, 22, Implings in Gielinor
+Gourmet Impling (Gielinor), 113.0, 28, Implings in Gielinor
+Earth Impling (Gielinor), 177.0, 36, Implings in Gielinor
+Essence Impling (Gielinor), 225.0, 42, Implings in Gielinor
+Eclectic Impling (Gielinor), 289.0, 50, Implings in Gielinor
+Spirit Impling (Gielinor), 321.0, 54, Implings in Gielinor
+Nature Impling (Gielinor), 353.0, 58, Implings in Gielinor
+Magpie Impling (Gielinor), 409.0, 65, Implings in Gielinor
+Ninja Impling (Gielinor), 481.0, 74, Implings in Gielinor
+Pirate impling (Gielinor), 497.0, 76, Implings in Gielinor
+Dragon Impling (Gielinor), 553.0, 83, Implings in Gielinor
+Zombie Impling (Gielinor), 585.0, 87, Implings in Gielinor
+Kingly Impling (Gielinor), 617.0, 91, Implings in Gielinor
+Baby Impling (Puro Puro), 20.0, 17, Implings in Puro Puro
+Young Impling (Puro Puro), 48.0, 22, Implings in Puro Puro
+Gourmet Impling (Puro Puro), 82.0, 28, Implings in Puro Puro
+Earth Impling (Puro Puro), 126.0, 36, Implings in Puro Puro
+Essence Impling (Puro Puro), 160.0, 42, Implings in Puro Puro
+Eclectic Impling (Puro Puro), 205.0, 50, Implings in Puro Puro
+Spirit Impling (Puro Puro), 227.0, 54, Implings in Puro Puro
+Nature Impling (Puro Puro), 250.0, 58, Implings in Puro Puro
+Magpie Impling (Puro Puro), 289.0, 65, Implings in Puro Puro
+Ninja Impling (Puro Puro), 339.0, 74, Implings in Puro Puro
+Pirate impling (Puro Puro), 350.0, 76, Implings in Puro Puro
+Dragon Impling (Puro Puro), 390.0, 83, Implings in Puro Puro
+Zombie Impling (Puro Puro), 412.0, 87, Implings in Puro Puro
+Kingly Impling (Puro Puro), 434.0, 91, Implings in Puro Puro
+Baby Squirrel, 152.0, 29, Net Traps
+Swamp Lizard, 152.0, 29, Net Traps
+Orange Salamander, 224.0, 47, Net Traps
+Penguin (Net), 250.0, 50, Net Traps
+Red Salamander, 272.0, 59, Net Traps
+Black Salamander, 304.0, 67, Net Traps
+White Rabbit, 144.0, 27, Other
+Imp-in-a-box, 450.0, 71, Other
+Spined Larupia, 180.0, 31, Pitfalls
+Horned Graahk, 240.0, 41, Pitfalls
+Sabre-Toothed Kyatt, 300.0, 55, Pitfalls
+Shadow jadinko, 475.0, 71, Tracking (Herblore Habitat)
+Diseased jadinko, 580.5, 78, Tracking (Herblore Habitat)
+Camouflaged jadinko, 600.0, 79, Tracking (Herblore Habitat)
+Polar Kebbit, 30.0, 1, Tracking
+Common Kebbit, 36.0, 3, Tracking
+Feldip Weasel, 48.0, 7, Tracking
+Desert Devil, 66.0, 13, Tracking
+Penguin (Tracking), 250.0, 45, Tracking
+Razor-Backed Kebbit, 348.0, 49, Tracking
+Common jadinko, 350.0, 70, Trapping (Herblore Habitat)
+Igneous jadinko, 465.0, 74, Trapping (Herblore Habitat)
+Cannibal jadinko, 475.0, 75, Trapping (Herblore Habitat)
+Aquatic jadinko, 475.0, 76, Trapping (Herblore Habitat)
+Amphibian jadinko, 485.0, 77, Trapping (Herblore Habitat)
+Carrion jadinko, 505.0, 78, Trapping (Herblore Habitat)
+Draconic jadinko, 525.0, 80, Trapping (Herblore Habitat)
+Guthix jadinko, 600.0, 81, Trapping (Herblore Habitat)
+Saradomin jadinko, 600.0, 81, Trapping (Herblore Habitat)
+Zamorak jadinko, 600.0, 81, Trapping (Herblore Habitat)

@@ -1,0 +1,163 @@
+Clean Sagewort, 2.1, 3, Dungeon Herbs
+Clean Valerian, 3.2, 4, Dungeon Herbs
+Clean Aloe, 4.0, 8, Dungeon Herbs
+Clean Wormwood Leaf, 7.2, 34, Dungeon Herbs
+Clean Magebane, 7.7, 37, Dungeon Herbs
+Clean Featherfoil, 8.6, 41, Dungeon Herbs
+Clean Winter's Grip, 12.7, 67, Dungeon Herbs
+Clean Lycopus, 13.1, 71, Dungeon Herbs
+Clean Buckthorn, 13.8, 74, Dungeon Herbs
+Weak Magic Potionn, 21.0, 3, Dungeon Potions
+Weak Ranged Potion, 34.0, 5, Dungeon Potions
+Weak Melee Potion, 37.5, 7, Dungeon Potions
+Weak Defence Potion, 41.0, 9, Dungeon Potions
+Weak Stat Restore Potion, 47.0, 12, Dungeon Potions
+Weak Cure Potion, 53.5, 15, Dungeon Potions
+Weak Rejuvenation Potion, 57.0, 18, Dungeon Potions
+Weak Poison, 61.0, 21, Dungeon Potions
+Weak Gatherer's Potion, 65.0, 24, Dungeon Potions
+Weak Artisan's Potion, 68.5, 27, Dungeon Potions
+Weak Naturalist's Potion, 72.0, 30, Dungeon Potions
+Weak Survivalist's Potion, 75.0, 33, Dungeon Potions
+Moderate Magic Potion, 79.5, 36, Dungeon Potions
+Moderate Ranged Potion, 83.0, 38, Dungeon Potions
+Moderate Melee Potion, 86.5, 40, Dungeon Potions
+Moderate Defence Potion, 89.0, 42, Dungeon Potions
+Moderate Stat Restore Potion, 93.0, 45, Dungeon Potions
+Moderate Cure Potion, 98.5, 48, Dungeon Potions
+Moderate Rejuvenation Potion, 105.5, 51, Dungeon Potions
+Moderate Poison, 114.0, 54, Dungeon Potions
+Moderate Gatherer's Potion, 123.5, 57, Dungeon Potions
+Moderate Artisan's Potion, 131.0, 60, Dungeon Potions
+Moderate Naturalist's Potion, 139.5, 63, Dungeon Potions
+Moderate Survivalist's Potion, 147.0, 66, Dungeon Potions
+Strong Magic Potion, 155.5, 69, Dungeon Potions
+Strong Ranged Potion, 160.0, 71, Dungeon Potions
+Strong Melee Potion, 164.0, 73, Dungeon Potions
+Strong Defence Potion, 170.5, 75, Dungeon Potions
+Strong Stat Restore Potion, 173.5, 78, Dungeon Potions
+Strong Cure Potion, 178.0, 81, Dungeon Potions
+Strong Rejuvenation Potion, 189.5, 84, Dungeon Potions
+Strong Poison, 205.5, 87, Dungeon Potions
+Strong Gatherer's Potion, 234.0, 90, Dungeon Potions
+Strong Artisan's Potion, 254.0, 93, Dungeon Potions
+Strong Naturalist's Potion, 279.0, 96, Dungeon Potions
+Strong Survivalist's Potion, 315.5, 99, Dungeon Potions
+Clean Erzille, 10.0, 54, Herbs (Herblore Habitat)
+Clean Ugune, 11.5, 55, Herbs (Herblore Habitat)
+Clean Argway, 11.6, 56, Herbs (Herblore Habitat)
+Clean Shengo, 11.7, 57, Herbs (Herblore Habitat)
+Clean Samaden, 11.7, 58, Herbs (Herblore Habitat)
+Clean Guam Leaf, 2.5, 1, Herbs
+Clean Ardrigal, 2.5, 3, Herbs
+Clean Rogue's Purse, 2.5, 3, Herbs
+Clean Sito Foil, 2.5, 3, Herbs
+Clean Snake Weed, 2.5, 3, Herbs
+Clean Volencia Moss, 2.5, 3, Herbs
+Clean Tarromin, 3.8, 5, Herbs
+Clean Marrentill, 5.0, 9, Herbs
+Clean Harralander, 6.3, 20, Herbs
+Clean Ranarr Weed, 7.5, 25, Herbs
+Clean Toadflax, 8.0, 30, Herbs
+Clean Spirit Weed, 7.8, 35, Herbs
+Clean Irit, 8.8, 40, Herbs
+Clean Wergali, 9.5, 41, Herbs
+Clean Avantoe, 10.0, 48, Herbs
+Clean Kwuarm, 11.3, 54, Herbs
+Clean Snapdragon, 11.8, 59, Herbs
+Clean Cadantine, 12.5, 65, Herbs
+Clean Lantadyme, 13.1, 67, Herbs
+Clean Dwarf Weed, 13.8, 70, Herbs
+Clean Torstol, 15.0, 75, Herbs
+Clean Fellstalk, 16.8, 91, Herbs
+Ranging Mix, 8.0, 5, Potion Mixes
+Magic Mix, 8.0, 7, Potion Mixes
+Relicym's Balm Mix, 14.0, 9, Potion Mixes
+Strength Mix, 17.0, 9, Potion Mixes
+Defence Mix, 25.0, 11, Potion Mixes
+Antipoison Mix, 1.2, 15, Potion Mixes
+Restore Mix, 21.0, 24, Potion Mixes
+Energy Mix, 23.0, 29, Potion Mixes
+Agility Mix, 27.0, 37, Potion Mixes
+Combat Mix, 28.0, 40, Potion Mixes
+Restore Prayer Mix, 29.0, 42, Potion Mixes
+Super Attack Mix, 33.0, 47, Potion Mixes
+Anit-p Supermix, 35.0, 51, Potion Mixes
+Fishing Mix, 38.0, 53, Potion Mixes
+Super Energy Mix, 39.0, 56, Potion Mixes
+Hunter Mix, 40.0, 58, Potion Mixes
+Super Strength Mix, 42.0, 59, Potion Mixes
+Magic Essence Mix, 43.0, 61, Potion Mixes
+Super Restore Mix, 48.0, 67, Potion Mixes
+Super Defence Mix, 50.0, 71, Potion Mixes
+Extra Strong Antipoison Mix, 52.0, 74, Potion Mixes
+Antifire Mix, 53.0, 75, Potion Mixes
+Super Ranging Mix, 54.0, 80, Potion Mixes
+Super Magic Mix, 57.0, 83, Potion Mixes
+Zamorak Mix, 58.0, 85, Potion Mixes
+Juju hunter potion, 123.0, 54, Potions (Herblore Habitat)
+Scentless potion, 135.0, 59, Potions (Herblore Habitat)
+Juju farming potion, 146.0, 64, Potions (Herblore Habitat)
+Juju cooking potion, 152.0, 67, Potions (Herblore Habitat)
+Juju fishing potion, 158.0, 70, Potions (Herblore Habitat)
+Juju woodcutting potion, 160.0, 71, Potions (Herblore Habitat)
+Juju mining potion, 168.0, 74, Potions (Herblore Habitat)
+Guthix's Gift, 179.0, 75, Potions (Herblore Habitat)
+Saradomin's Blessing, 179.0, 75, Potions (Herblore Habitat)
+Zamorak's Favour, 179.0, 75, Potions (Herblore Habitat)
+Attack Mix, 8.0, 4, Potions Mixes
+Attack Potion, 25.0, 1, Potions
+Ranging Potion, 30.0, 3, Potions
+Magic Potion, 35.0, 5, Potions
+Strength Potion, 40.0, 7, Potions
+Relicym's Balm, 40.0, 8, Potions
+Defence Potion, 45.0, 9, Potions
+Antipoison, 50.0, 13, Potions
+Serum 207, 50.0, 15, Potions
+Guthix Rest Tea, 56.0, 18, Potions
+15 x Guam Tar, 30.0, 19, Potions
+Guthix Balance, 112.0, 22, Potions
+Restore Potion, 62.5, 22, Potions
+Blamish Oil, 80.0, 25, Potions
+Energy Potion, 67.5, 26, Potions
+15 x Marrentill Tar, 42.5, 31, Potions
+Super Fishing Explosive, 55.0, 31, Potions
+Agility Potion, 80.0, 34, Potions
+Combat Potion, 84.0, 36, Potions
+Goblin Potion, 85.0, 37, Potions
+Prayer Potion, 87.5, 38, Potions
+15 x Tarromin Tar, 55.0, 39, Potions
+Summoning Potion, 92.0, 40, Potions
+Crafting Potion, 95.0, 42, Potions
+15 x Harralander Tar, 72.5, 44, Potions
+Super Attack Potion, 100.0, 45, Potions
+Super Antipoison, 106.3, 48, Potions
+Fishing Potion, 112.5, 50, Potions
+Super Energy Potion, 117.5, 52, Potions
+Hunter Potion, 120.0, 53, Potions
+Super Strength Potion, 125.0, 55, Potions
+Magic Essence, 130.0, 57, Potions
+Fletching Potion, 132.0, 58, Potions
+Weapon Poison, 137.5, 60, Potions
+Super Restore Potion, 142.5, 63, Potions
+Sanfew Serum, 160.0, 65, Potions
+Super Defence Potion, 150.0, 66, Potions
+Antipoison Plus, 155.0, 68, Potions
+Antifire Potion, 157.5, 69, Potions
+Super Ranging Potion, 162.5, 72, Potions
+Weapon Poison Plus, 165.0, 73, Potions
+Super Magic Potion, 172.5, 76, Potions
+Zamorak Brew, 175.0, 78, Potions
+Antipoison Plus Plus, 177.5, 79, Potions
+Saradomin Brew, 180.0, 81, Potions
+Weapon Poison Plus Plus, 190.0, 82, Potions
+Adrenaline Potion, 200.0, 84, Potions
+Super Antifire Potion, 210.0, 85, Potions
+Extreme Attack Potion, 220.0, 88, Potions
+Extreme Strength Potion, 230.0, 89, Potions
+Extreme Defence Potion, 240.0, 90, Potions
+Extreme Magic Potion, 250.0, 91, Potions
+Extreme Ranging Potion, 260.0, 92, Potions
+Prayer Renewal Potion, 190.0, 94, Potions
+Super Prayer Potion, 270.0, 94, Potions
+Overload Potion, 1000.0, 96, Potions

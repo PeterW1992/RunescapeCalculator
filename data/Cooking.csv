@@ -1,0 +1,152 @@
+Cider, 182.0, 14, Brewing
+Dwarven Stout, 215.0, 19, Brewing
+Asgarnian Ale, 248.0, 24, Brewing
+Greenman's Ale, 281.0, 29, Brewing
+Wizard's Mind Bomb, 314.0, 34, Brewing
+Dragon Bitter, 347.0, 39, Brewing
+Moonlight Mead, 380.0, 44, Brewing
+Axeman's Folly, 413.0, 49, Brewing
+Chef's Delight, 446.0, 54, Brewing
+Slayer's Respite, 479.0, 59, Brewing
+Baked cave potato, 9.0, 1, Dungeon Food
+Edicap potato, 16.7, 1, Dungeon Food
+Gissel potato, 12.5, 1, Dungeon Food
+Heim crab, 22.0, 1, Dungeon Food
+Heim crab potato, 31.0, 3, Dungeon Food
+Heim crab and gissel potato, 41.1, 6, Dungeon Food
+Heim crab and edicap potato, 51.9, 9, Dungeon Food
+Red-eye, 41.0, 10, Dungeon Food
+Red-eye potato, 50.0, 13, Dungeon Food
+Red-eye and gissel potato, 65.8, 16, Dungeon Food
+Red-eye and edicap potato, 82.3, 19, Dungeon Food
+Dusk eel, 61.0, 20, Dungeon Food
+Dusk eel potato, 70.0, 23, Dungeon Food
+Dusk eel and gissel potato, 91.8, 26, Dungeon Food
+Dusk eel and edicap potato, 114.3, 29, Dungeon Food
+Giant flatfish, 82.0, 30, Dungeon Food
+Flatfish potato, 91.0, 33, Dungeon Food
+Flatfish and gissel potato, 119.1, 36, Dungeon Food
+Flatfish and edicap potato, 147.9, 39, Dungeon Food
+Short-finned eel, 103.0, 40, Dungeon Food
+Shortfin potato, 112.0, 43, Dungeon Food
+Shortfin and gissel potato, 146.4, 46, Dungeon Food
+Shortfin and edicap potato, 181.5, 49, Dungeon Food
+Web snipper, 124.0, 50, Dungeon Food
+Snipper potato, 133.0, 53, Dungeon Food
+Snipper and gissel potato, 173.7, 56, Dungeon Food
+Snipper and edicap potato, 215.1, 59, Dungeon Food
+Bouldabass, 146.0, 60, Dungeon Food
+Bouldabass potato, 155.0, 63, Dungeon Food
+Bouldabass and gissel potato, 202.3, 66, Dungeon Food
+Bouldabass and edicap potato, 250.3, 69, Dungeon Food
+Salve eel, 168.0, 70, Dungeon Food
+Salve eel potato, 177.0, 73, Dungeon Food
+Salve eel and gissel potato, 260.0, 76, Dungeon Food
+Salve eel and edicap potato, 285.5, 79, Dungeon Food
+Blue crab, 191.0, 80, Dungeon Food
+Blue crab and gissel potato, 260.8, 83, Dungeon Food
+Blue crab potato, 200.0, 83, Dungeon Food
+Blue crab and edicap potato, 322.3, 89, Dungeon Food
+Cave moray, 215.0, 90, Dungeon Food
+Moray potato, 224.0, 93, Dungeon Food
+Moray and gissel potato, 292.0, 96, Dungeon Food
+Moray and edicap potato, 360.7, 99, Dungeon Food
+Fruit Blast, 50.0, 6, Gnomish Beverages
+Pineapple Punch, 70.0, 8, Gnomish Beverages
+Wizard Blizzard, 110.0, 18, Gnomish Beverages
+Short Green Guy, 120.0, 20, Gnomish Beverages
+Drunk Dragon, 160.0, 32, Gnomish Beverages
+Chocolate Saturday, 170.0, 33, Gnomish Beverages
+Blurberry Special, 180.0, 37, Gnomish Beverages
+Toad Crunchies, 100.0, 10, Gnomish Foods
+Spice Crunchies, 100.0, 12, Gnomish Foods
+Worm Crunchies, 100.0, 14, Gnomish Foods
+Choc Chip Crunchies, 100.0, 16, Gnomish Foods
+Fruit Batta, 150.0, 25, Gnomish Foods
+Toad Batta, 152.0, 26, Gnomish Foods
+Worm Batta, 154.0, 27, Gnomish Foods
+Vegetable Batta, 156.0, 28, Gnomish Foods
+Cheese and Tomato Batta, 158.0, 29, Gnomish Foods
+Worm Hole, 170.0, 30, Gnomish Foods
+Vegetable Ball, 175.0, 35, Gnomish Foods
+Tangled Toads Legs, 185.0, 40, Gnomish Foods
+Chocolate Bomb, 190.0, 42, Gnomish Foods
+Anchovies, 30.0, 1, Meats and Fish
+Any Raw Meats, 30.0, 1, Meats and Fish
+Chicken, 30.0, 1, Meats and Fish
+Crayfish, 30.0, 1, Meats and Fish
+Karambwan, Poisonous, 80.0, 1, Meats and Fish
+Karambwanji, 10.0, 1, Meats and Fish
+Sardine, 40.0, 1, Meats and Fish
+Shrimp, 30.0, 1, Meats and Fish
+Sinew, 3.0, 1, Meats and Fish
+Ugthanki Kebab - Bread Premade, 40.0, 1, Meats and Fish
+Herring, 50.0, 5, Meats and Fish
+Mackerel, 60.0, 10, Meats and Fish
+Thin Snail, 70.0, 12, Meats and Fish
+Trout, 70.0, 15, Meats and Fish
+Spider, 80.0, 16, Meats and Fish
+Lean Snail, 80.0, 17, Meats and Fish
+Cod, 75.0, 18, Meats and Fish
+Pike, 80.0, 20, Meats and Fish
+Crab Meat, 100.0, 21, Meats and Fish
+Fat Snail, 95.0, 22, Meats and Fish
+Salmon, 90.0, 25, Meats and Fish
+Slimy Eel, 95.0, 28, Meats and Fish
+Chompy, 140.0, 30, Meats and Fish
+Tuna, 100.0, 30, Meats and Fish
+Fishcake, 100.0, 31, Meats and Fish
+Rainbow Fish, 110.0, 35, Meats and Fish
+Cave Eel, 115.0, 38, Meats and Fish
+Lobster, 120.0, 40, Meats and Fish
+Jubbly, 160.0, 41, Meats and Fish
+Bass, 130.0, 43, Meats and Fish
+Swordfish, 140.0, 45, Meats and Fish
+Oomlie Wrap, 30.0, 50, Meats and Fish
+Lava Eel, 30.0, 53, Meats and Fish
+Ugthanki Kebab from Scratch, 80.0, 58, Meats and Fish
+Karambwan, Edible, 190.0, 60, Meats and Fish
+Monkfish, 150.0, 62, Meats and Fish
+Shark, 210.0, 80, Meats and Fish
+Sea Turtle, 211.3, 82, Meats and Fish
+Cavefish, 214.0, 88, Meats and Fish
+Manta Ray, 216.3, 91, Meats and Fish
+Rocktail, 225.0, 93, Meats and Fish
+Tiger Shark, 230.0, 95, Meats and Fish
+Bread, 40.0, 1, Other Foods
+Redberry Pie, 78.0, 10, Other Foods
+Meat Pie, 110.0, 20, Other Foods
+Nettle Tea, 52.0, 20, Other Foods
+Churn Milk into Cream, 18.0, 21, Other Foods
+Stew, 117.0, 25, Other Foods
+Mud Pie, 128.0, 29, Other Foods
+Apple Pie, 130.0, 30, Other Foods
+Garden Pie, 138.0, 34, Other Foods
+Plain Pizza, 143.0, 35, Other Foods
+Wine, 200.0, 35, Other Foods
+Churn Cream to Butter, 22.5, 38, Other Foods
+Cake, 180.0, 40, Other Foods
+Meat Pizza, 169.0, 45, Other Foods
+Fish Pie, 164.0, 47, Other Foods
+Churn Butter into Cheese, 23.5, 48, Other Foods
+Churn Milk into Cheese, 64.0, 48, Other Foods
+Chocolate Cake, 210.0, 50, Other Foods
+Anchovy Pizza, 182.0, 55, Other Foods
+Pitta Bread, 40.0, 58, Other Foods
+Curry, 280.0, 60, Other Foods
+Pineapple Pizza, 188.0, 65, Other Foods
+Admiral Pie, 210.0, 70, Other Foods
+Wild Pie, 240.0, 85, Other Foods
+Summer Pie, 260.0, 95, Other Foods
+Baked Potato, 15.0, 7, Vegetables
+Spicy Sauce, 25.0, 9, Vegetables
+Scrambled Egg, 50.0, 13, Vegetables
+Sweetcorn, 104.0, 28, Vegetables
+Butter a Potato, 40.0, 39, Vegetables
+Add Chilli-con-Carne to Potato, 15.0, 41, Vegetables
+Fried Onion, 60.0, 42, Vegetables
+Fried Mushroom, 60.0, 46, Vegetables
+Add Cheese to Potato, 40.0, 47, Vegetables
+Add Egg & Tomato to Potato, 45.0, 51, Vegetables
+Add Mushroom & Onion to Potato, 55.0, 64, Vegetables
+Add Tuna & Sweetcorn to Potato, 10.0, 68, Vegetables
