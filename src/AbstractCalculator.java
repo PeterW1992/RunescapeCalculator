@@ -21,7 +21,7 @@ public abstract class AbstractCalculator
 
     public int targetLevel;
     public double currentXp;
-    public Map<String,Double> nameAndXpGained = new TreeMap();
+    public List<RSAction> nameAndXpGained = new ArrayList<RSAction>();
     public static Map<String,Long> storedXPMapHighscores = new HashMap<>();
     public Set<String> skillFilter = new HashSet<>();
     public Map<String,Integer> storedXPMap = new TreeMap();
@@ -87,18 +87,18 @@ public abstract class AbstractCalculator
       {
        if (slayerXpGained != 0.0)
        {
-       nameAndXpGained.put(monsterName, slayerXpGained);
+       nameAndXpGained.add(new RSAction(monsterName, slayerXpGained, null,null));
        }
       }
       else
       {
       if (this.getSkillName().equals("Constitution"))
       {
-      nameAndXpGained.put(monsterName, xpGained / 4);
+          nameAndXpGained.add(new RSAction(monsterName, xpGained / 4, null,null));
       }
       else
       {
-      nameAndXpGained.put(monsterName, xpGained);
+          nameAndXpGained.add(new RSAction(monsterName, xpGained, null,null));
        System.out.println("\"('"+ monsterName.replaceAll("'", "''") + "', "+ xpGained + ", " + slayerXpGained + ", " + monsterLevel +
               "), \" + ");
       }
@@ -113,6 +113,43 @@ public abstract class AbstractCalculator
          System.out.println("readFromMonsterTable: " + anException);
      }
    }
+
+    public void readFromSkillDataFile(String skillName)
+    {
+        String currentLine;
+        String fileName = ".\\data\\" + skillName + ".csv";
+
+        try
+        {
+            File aFile = new File(fileName);
+            BufferedReader bufferedFileReader =  new BufferedReader(new FileReader(aFile));
+            currentLine = bufferedFileReader.readLine();
+            double xpGained;
+            String description = null;
+            Integer minimumLevel= null;
+            String category = null;
+            while (currentLine != null)
+            {
+                Scanner lineScanner = new Scanner(currentLine);
+                lineScanner.useDelimiter(",");
+                description = lineScanner.next();
+                xpGained = lineScanner.nextDouble();
+                minimumLevel = lineScanner.nextInt();
+                category = lineScanner.next();
+
+
+                nameAndXpGained.add(new RSAction(description, xpGained, minimumLevel, category));
+                currentLine = bufferedFileReader.readLine();
+            }
+            bufferedFileReader.close();
+
+        }
+        catch (Exception anException)
+        {
+            System.out.println("readFromSkillDataFile: " + anException);
+        }
+    }
+
  
  public void readFromXpStore()
  {
@@ -208,7 +245,7 @@ public abstract class AbstractCalculator
       {this.currentXp = xpAmount;}
    }
    
-   public Map<String,Double> getNameAndXpGained()
+   public List<RSAction> getNameAndXpGained()
    {
       return this.nameAndXpGained;
    }
@@ -314,14 +351,14 @@ public abstract class AbstractCalculator
     public double getHighestXp(Map<String,Double> calculatorMap)
     {
         double HighestXp = 0.0;
-        Set<String> calculatorKeySet = calculatorMap.keySet();
+        /*Set<String> calculatorKeySet = calculatorMap.keySet();
         for (String name : calculatorKeySet)
         {
             if (this.getNameAndXpGained().get(name) > HighestXp)
             {
                 HighestXp = this.getNameAndXpGained().get(name);
             }
-        }
+        }*/
         return HighestXp;
     }
         

@@ -7,18 +7,32 @@
  *
  * @author PeterW
  */
+import com.sun.org.apache.xerces.internal.parsers.IntegratedParserConfiguration;
+import org.omg.CORBA.Environment;
+
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 import javax.swing.*;
 public class RunescapeCalculator extends javax.swing.JFrame {
 
        AbstractCalculator calculator = null;
-       Map<String, Double> calculatorMap;
-       Set<String> calculatorKeySet;
+       List<RSAction> calculatorMap;
        DefaultListModel listModel;
        public static Map<String, Long> StoredXp = null;
-       
 
+    String[] columnNames = {
+            "Level",
+            "Description",
+            "Xp Gained",
+            "Iterations"};
+
+    Object[][] data = {
+            {"1", "Snowboarding",
+                    "3.0", "10"},
+            {"10", "Sucking dick",
+                    "25.0", "1"}};
        
      /**
      * Creates new form RunescapeCalculator
@@ -27,6 +41,65 @@ public class RunescapeCalculator extends javax.swing.JFrame {
        initComponents();
        comboboxSkills.setSelectedItem("Agility");
        calculator = new AgilityCalculator();
+    }
+
+
+    private void outputToFile(Map<String,Double> nameAndXpGained, String skillName) {
+        List<RSAction> actions = new ArrayList<RSAction>();
+        for (String key : nameAndXpGained.keySet()) {
+            RSAction action = generateRSAction(key, nameAndXpGained.get(key));
+            actions.add(action);
+        }
+
+        try {
+            String fileName = ".\\data\\" + skillName + ".csv";
+            File myObj = new File(fileName);
+            if (myObj.createNewFile()) {
+                System.out.println("File created: " + myObj.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+
+            FileWriter myWriter = new FileWriter(fileName);
+            for (RSAction action : actions)
+            {
+                myWriter.write(action.toString() + "\n");
+            }
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+
+    private RSAction generateRSAction(String actionString, Double xp) {
+
+        String description = null;
+        Integer minimumLevel = null;
+        String category = null;
+
+        if (actionString.contains("-")) {
+            description = actionString.substring(actionString.indexOf('-') + 1).trim();
+        }
+
+        if (actionString.contains("Level ")) {
+            minimumLevel = Integer.parseInt(actionString.substring(actionString.indexOf("Level ") + 6, actionString.indexOf("Level ") + 8));
+            category = actionString.substring(0, actionString.indexOf("Level"));
+        }
+
+        if (calculator.getSkillName().equals("Prayer")) {
+            for (String skillFilter : calculator.skillFilter) {
+                if (actionString.contains(skillFilter)){
+                    actionString = actionString.replace(skillFilter, "");
+                    category = skillFilter;
+                }
+            }
+            description = actionString;
+        }
+
+        return new RSAction(description, xp, minimumLevel, category);
     }
     
 
@@ -42,6 +115,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
         txtCurrentXPOrLevel = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
+        tblActions = new JTable(data,columnNames);
         lblTargetLevel = new javax.swing.JLabel();
         txtTargetLevel = new javax.swing.JTextField();
         btnCalculate = new javax.swing.JButton();
@@ -73,6 +147,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
         jList1.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         jList1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jList1.setToolTipText("");
+        tblActions.setFillsViewportHeight(true);
         jScrollPane1.setViewportView(jList1);
 
         lblTargetLevel.setText("Target Level:");
@@ -183,7 +258,6 @@ public class RunescapeCalculator extends javax.swing.JFrame {
     private void comboboxSkillsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboboxSkillsActionPerformed
         switch ((String) comboboxSkills.getSelectedItem())
         {           
-            //nameAndXpGained.put("CoursesLevel 01 - Burthorpe",79.5)
             case "Agility":
             calculator = new AgilityCalculator();
             break;
@@ -241,20 +315,6 @@ public class RunescapeCalculator extends javax.swing.JFrame {
             
             case "Prayer":
             calculator = new PrayerCalculator();
-            for (String aString : calculator.nameAndXpGained.keySet()){
-                double xp = calculator.nameAndXpGained.get(aString);
-                String skillFilter = "";
-                
-                for(String aSkillFilter : calculator.skillFilter){
-                    if (aString.startsWith(aSkillFilter))
-                        skillFilter = aSkillFilter;
-                }
-                
-                String ActionName = aString.substring(skillFilter.length());
-                ActionName = ActionName.replaceAll("'", "''");
-                
-                System.out.println("\"('" + ActionName + "', '" + skillFilter + "', " + 0 + ", " + xp + "), \"" + " +");
-            }
             break;
                 
             case "Ranged":
@@ -263,7 +323,6 @@ public class RunescapeCalculator extends javax.swing.JFrame {
                 
             case "Runecrafting" :
             calculator = new RunecraftingCalculator();   
-            
             break;
                 
             case "Slayer":
@@ -289,7 +348,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
         } catch (IOException ex) {
            ex.printStackTrace();
        }
-        
+
         this.changeCalculator();
 
         
@@ -321,14 +380,17 @@ public class RunescapeCalculator extends javax.swing.JFrame {
 
     this.updatePlayersCurrentLevel();
     listModel.removeAllElements();
-       for (String name : calculatorKeySet)
+    List<RSAction> actions = new ArrayList<RSAction>();
+       for (String name : nameAndXpGained)
        {
            if (name.startsWith(comboboxSkillFilter.getSelectedItem().toString()))
                   {
                       double xpGained = calculatorMap.get(name);
                       int xpToLevel = calculator.getXpForLevels().get(targetLevel) - currentXp;
                       double iterations = xpToLevel / calculatorMap.get(name);
+
                       String firstPart = name.substring(comboboxSkillFilter.getSelectedItem().toString().length(),name.length());
+
                       while (firstPart.length() != calculator.getLongestName(calculatorMap) - comboboxSkillFilter.getSelectedItem().toString().length())
                       {
                           firstPart = firstPart + " ";
@@ -339,16 +401,23 @@ public class RunescapeCalculator extends javax.swing.JFrame {
                       {
                           secondPart = secondPart + " ";
                       }
-                      String tableEntry = (firstPart + secondPart + " Iterations: " + (int)(iterations+0.99)); 
+                      String tableEntry = (firstPart + secondPart + " Iterations: " + (int)(iterations+0.99));
+                      int minimumLevel = Integer.parseInt(name.substring(name.indexOf("Level ") + 6, name.indexOf("Level ") + 8));
+                      String desc = firstPart.substring(firstPart.indexOf('-') + 1).trim();
+                      RSAction action = new RSAction(desc, xpGained,minimumLevel, comboboxSkillFilter.getSelectedItem().toString());
+                      actions.add(action);
+
                       listModel.addElement(tableEntry);
                   }
             }
+
         this.jList1.setModel(listModel);
     }
     catch (Exception anException){
     JOptionPane.showMessageDialog(null, "Incorrect input(s), Current Xp and Target Level must be numbers" + anException);
     }
     }
+
     
     private  void calculateUsingLevel()
     {
@@ -368,25 +437,20 @@ public class RunescapeCalculator extends javax.swing.JFrame {
     }
     this.updatePlayersCurrentLevel();
     listModel.removeAllElements();
-       for (String name : calculatorKeySet)
+       for (RSAction rsAction : calculator.nameAndXpGained)
        {
-          if (name.startsWith(comboboxSkillFilter.getSelectedItem().toString()))
+          if (rsAction.GetCategory().equals(comboboxSkillFilter.getSelectedItem().toString()))
                   {
-                      double xpGained = calculatorMap.get(name);
+                      double xpGained = rsAction.GetXp();
                       int xpToLevel = calculator.getXpForLevels().get(targetLevel) - currentXp;
-                      double iterations = xpToLevel / calculatorMap.get(name);
-                      String firstPart = name.substring(comboboxSkillFilter.getSelectedItem().toString().length(),name.length());
-                      while (firstPart.length() != calculator.getLongestName(calculatorMap) - comboboxSkillFilter.getSelectedItem().toString().length())
-                      {
-                          firstPart = firstPart + " ";
+                      double iterations = xpToLevel / xpGained;
+
+                      String lvlPrefix = "";
+                      if (rsAction.GetMinimumLevel() != null) {
+                        lvlPrefix = "Level " + rsAction.GetMinimumLevel() + ", ";
                       }
-                      String secondPart = " XP Gained: " + xpGained;
-                      
-                      while ((" XP Gained: " + calculator.getHighestXp(calculatorMap)).length() != secondPart.length())
-                      {
-                          secondPart = secondPart + " ";
-                      }
-                      String tableEntry = (firstPart + secondPart + " Iterations: " + (int)(iterations+0.99)); 
+                      String tableEntry = (lvlPrefix + rsAction.GetMinimumLevel() + rsAction.GetDescription() + " Iterations: " + (int)(iterations+0.99));
+
                       listModel.addElement(tableEntry);
                   }
        }
@@ -544,6 +608,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
     private javax.swing.JComboBox comboboxSkills;
     private javax.swing.JComboBox comboboxXPOrLevel;
     private javax.swing.JList jList1;
+    private javax.swing.JTable tblActions;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblPlayersCurrentLevel;
     private javax.swing.JLabel lblTargetLevel;

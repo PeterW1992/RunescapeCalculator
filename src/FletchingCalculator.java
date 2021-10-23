@@ -161,7 +161,7 @@ nameAndXpGained.put("BoltsLevel 93 - 10x Bakriminel bolt shafts",320.0);
     nameAndXpGained.put("Dungeon ArrowsLevel 90 - 65 x Promethium Arrows",19.5);
     skillFilter.add("Dungeon Bows");
     nameAndXpGained.put("Dungeon BowsLevel 01 - Tangle Gum Shortbow",10.0);
-    nameAndXpGained.put("Dungeon BowsLevel 6 - Tangle Gum Longbow",11.4);
+    nameAndXpGained.put("Dungeon BowsLevel 06 - Tangle Gum Longbow",11.4);
 nameAndXpGained.put("Dungeon BowsLevel 11 - Seeping Elm Shortbow",18.0);
 nameAndXpGained.put("Dungeon BowsLevel 16 - Seeping Elm Longbow",20.6);
 nameAndXpGained.put("Dungeon BowsLevel 21 - Blood Spindle Shortbow",30.0);

@@ -11,6 +11,8 @@ public class ThievingCalculator extends AbstractCalculator{
     ThievingCalculator()
     {
         this.isCombatSkill = false;
+
+        this.readFromSkillDataFile("");
         this.skillFilter.add("Other");
         this.nameAndXpGained.put("OtherLevel 25 - Thieves Guild Door (North)", 210.0);
         this.nameAndXpGained.put("OtherLevel 35 - Thieves Guild Door (South)", 280.0);
