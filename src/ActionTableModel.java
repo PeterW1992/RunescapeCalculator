@@ -1,3 +1,5 @@
+import sun.security.mscapi.CKeyPairGenerator;
+
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 import java.util.List;
@@ -17,7 +19,7 @@ public class ActionTableModel implements TableModel {
 
     @Override
     public int getColumnCount() {
-        return 4;
+        return 3;
     }
 
     @Override
@@ -40,7 +42,7 @@ public class ActionTableModel implements TableModel {
 
     @Override
     public Class<?> getColumnClass(int columnIndex) {
-        return null;
+        return "".getClass();
     }
 
     @Override
@@ -50,6 +52,22 @@ public class ActionTableModel implements TableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
+        RSAction action = this._actions.get(rowIndex);
+
+        switch (columnIndex) {
+            case 0:
+            return action.GetMinimumLevel();
+
+            case 1:
+                return action.GetDescription();
+
+            case 2:
+                return action.GetXp();
+
+            case 3:
+                return 0;
+        }
+
         return null;
     }
 

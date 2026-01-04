@@ -10,7 +10,8 @@
 public class CraftingCalculator extends AbstractCalculator{
     CraftingCalculator(){
         this.isCombatSkill = false;
-        skillFilter.add("Armour");
+        this.readFromSkillDataFile(this.getSkillName());
+        /*skillFilter.add("Armour");
         nameAndXpGained.put("ArmourLevel 01 - Leather Gloves",13.8); 
         nameAndXpGained.put("ArmourLevel 07 - Leather Boots",16.3); 
         nameAndXpGained.put("ArmourLevel 09 - Leather Cowl",18.5);
@@ -277,7 +278,7 @@ public class CraftingCalculator extends AbstractCalculator{
         nameAndXpGained.put("OtherLevel 30 - Rope",25.0);
         nameAndXpGained.put("OtherLevel 36 - Fruit Basket",56.0);
         nameAndXpGained.put("OtherLevel 48 - Banner",42.0);
-        nameAndXpGained.put("OtherLevel 52 - Seaweed Net",83.0);
+        nameAndXpGained.put("OtherLevel 52 - Seaweed Net",83.0);*/
 				
     }
 }

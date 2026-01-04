@@ -7,8 +7,6 @@
  *
  * @author PeterW
  */
-import com.sun.org.apache.xerces.internal.parsers.IntegratedParserConfiguration;
-import org.omg.CORBA.Environment;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -148,7 +146,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
         jList1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jList1.setToolTipText("");
         tblActions.setFillsViewportHeight(true);
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(tblActions);
 
         lblTargetLevel.setText("Target Level:");
         lblTargetLevel.setToolTipText("");
@@ -297,7 +295,6 @@ public class RunescapeCalculator extends javax.swing.JFrame {
                 
             case "Herblore":
             calculator = new HerbloreCalculator();
-            
             break;
                 
             case "Hunter":
@@ -367,6 +364,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
     
     private void calculateUsingExperience()
     {
+        /*
     int currentXp = 0;
     int targetLevel = 0;
     try {
@@ -416,6 +414,7 @@ public class RunescapeCalculator extends javax.swing.JFrame {
     catch (Exception anException){
     JOptionPane.showMessageDialog(null, "Incorrect input(s), Current Xp and Target Level must be numbers" + anException);
     }
+    */
     }
 
     
@@ -500,24 +499,18 @@ public class RunescapeCalculator extends javax.swing.JFrame {
                       listModel.addElement(actualName + " XP Gained: " + calculatorMap.get(name) + " Iterations: --");
                   }
             }
-            this.jList1.setModel(listModel);
+            this.jList1.setModel(listModel);*/
             }
-    }//GEN-LAST:event_comboboxSkillFilterActionPerformed
-    
+
+    //GEN-LAST:event_comboboxSkillFilterActionPerformed
     private  void changeCalculator()
     {
             txtTargetLevel.setText("");
             comboboxSkillFilter.removeAllItems();
             calculatorMap = calculator.getNameAndXpGained();
-            if (calculator.isCombatSkill)
-            {
-            listModel = calculator.getUniformTableForCombat(calculatorMap, comboboxSkillFilter.getItemAt(0).toString());
-            }
-            else
-            {
-            listModel = calculator.getUniformTable(calculatorMap, comboboxSkillFilter.getItemAt(0).toString());
-            }
-            this.jList1.setModel(listModel);
+
+            tblActions.setModel(new ActionTableModel(calculatorMap));
+            comboboxSkillFilter.setModel();
             this.updatePlayersCurrentLevel();
             }
     

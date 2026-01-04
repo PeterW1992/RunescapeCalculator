@@ -58,7 +58,7 @@ public abstract class AbstractCalculator
    }
 
 }
-  public void readFromMonsterTable()
+     public void readFromMonsterTable()
   {
     String currentLine;
     String fileName = "C:\\Users\\Peter\\Dropbox\\History\\Monsters.txt";
@@ -118,7 +118,7 @@ public abstract class AbstractCalculator
     {
         String currentLine;
         String fileName = ".\\data\\" + skillName + ".csv";
-
+        System.out.println(fileName);
         try
         {
             File aFile = new File(fileName);
@@ -130,19 +130,21 @@ public abstract class AbstractCalculator
             String category = null;
             while (currentLine != null)
             {
-                Scanner lineScanner = new Scanner(currentLine);
+                Scanner lineScanner = new Scanner(currentLine).useLocale(Locale.UK);
                 lineScanner.useDelimiter(",");
                 description = lineScanner.next();
-                xpGained = lineScanner.nextDouble();
-                minimumLevel = lineScanner.nextInt();
+                xpGained = Double.parseDouble(lineScanner.next().trim());
+                minimumLevel = Integer.parseInt(lineScanner.next().trim());
                 category = lineScanner.next();
 
-
                 nameAndXpGained.add(new RSAction(description, xpGained, minimumLevel, category));
+
+                skillFilter.add(category);
                 currentLine = bufferedFileReader.readLine();
             }
             bufferedFileReader.close();
 
+            System.out.println(nameAndXpGained.size());
         }
         catch (Exception anException)
         {
