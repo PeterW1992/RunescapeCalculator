@@ -473,13 +473,14 @@ public class RunescapeCalculator extends javax.swing.JFrame {
                
             calculatorMap = calculator.getNameAndXpGained();
             comboboxSkillFilter.setSelectedItem(selectedItem);
+
             if (calculator.isCombatSkill)
             {
-            listModel = calculator.getUniformTableForCombat(calculatorMap, selectedItem);
+                listModel = calculator.getUniformTableForCombat(calculatorMap, selectedItem);
             }
             else
             {
-            listModel = calculator.getUniformTable(calculatorMap, selectedItem);
+                listModel = calculator.getUniformTable(calculatorMap, selectedItem);
             }
             this.jList1.setModel(listModel);
             }
@@ -490,27 +491,27 @@ public class RunescapeCalculator extends javax.swing.JFrame {
                 comboboxSkillFilter.addItem(skillFilter);
             }
             calculatorMap = calculator.getNameAndXpGained();
-            calculatorKeySet = calculatorMap.keySet();
             listModel = new DefaultListModel();
-            for (String name : calculatorKeySet){
-                if (name.startsWith(comboboxSkillFilter.getSelectedItem().toString()))
+            
+            for (RSAction action : calculatorMap){
+                if (action.GetCategory().startsWith(comboboxSkillFilter.getSelectedItem().toString()))
                   {
-                      String actualName = name.substring(comboboxSkillFilter.getItemAt(0).toString().length(),name.length() );
-                      listModel.addElement(actualName + " XP Gained: " + calculatorMap.get(name) + " Iterations: --");
+                      listModel.addElement(action.GetDescription() + " XP Gained: " + action.GetXp() + " Iterations: --");
                   }
             }
-            this.jList1.setModel(listModel);*/
-            }
+            this.jList1.setModel(listModel);
+    }
+}
 
     //GEN-LAST:event_comboboxSkillFilterActionPerformed
-    private  void changeCalculator()
+    private void changeCalculator()
     {
             txtTargetLevel.setText("");
             comboboxSkillFilter.removeAllItems();
             calculatorMap = calculator.getNameAndXpGained();
 
             tblActions.setModel(new ActionTableModel(calculatorMap));
-            comboboxSkillFilter.setModel();
+            //comboboxSkillFilter.setModel();
             this.updatePlayersCurrentLevel();
             }
     

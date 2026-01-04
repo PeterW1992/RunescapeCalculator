@@ -261,35 +261,33 @@ public abstract class AbstractCalculator
        return this.skillFilter;
    }
    
-   public DefaultListModel getUniformTable(Map<String,Double> calculatorMap, String filterSelected)
+   public DefaultListModel getUniformTable(List<RSAction> actions, String filterSelected)
    {
-            Set<String> calculatorKeySet = calculatorMap.keySet();
             DefaultListModel listModel = new DefaultListModel();
             String longestName = " ";
             double sizeOfXp = 0.0;
-            for (String getLength : calculatorKeySet)
+            for (RSAction action : actions)
             {
-                if (getLength.length() > longestName.length())
+                String description = action.GetDescription();
+                if (description.length() > longestName.length())
                 {
-                    longestName = getLength;
+                    longestName = description;
                 }
-                if (calculatorMap.get(getLength) > sizeOfXp)
+                if (action.GetXp() > sizeOfXp)
                 {
-                    sizeOfXp = calculatorMap.get(getLength);
+                    sizeOfXp = action.GetXp();
                 }
             }
            
-            for (String name : calculatorKeySet){
-                if (name.startsWith(filterSelected + "Level") ||
-                    name.startsWith(filterSelected) && this.getSkillName().equals("Prayer"))
+            for (RSAction action : actions){
+                if (action.GetCategory().startsWith(filterSelected))
                   {
-                      String actualName = name.substring(filterSelected.length(),name.length() );
-                      String makeUniform = actualName;
+                      String makeUniform = action.GetDescription();
                       while (makeUniform.length() != longestName.length() - filterSelected.length())
                       {
                           makeUniform = makeUniform.concat(" ");
                       }
-                      String xpGained = " XP Gained: " +  calculatorMap.get(name);
+                      String xpGained = " XP Gained: " + action.GetXp();
                       while (xpGained.length() != (" XP Gained: " + sizeOfXp).length())
                       {
                           xpGained = xpGained + " ";
@@ -301,39 +299,39 @@ public abstract class AbstractCalculator
             return listModel;
    }
    
-   public DefaultListModel getUniformTableForCombat(Map<String,Double> calculatorMap, String filterSelected)
+   public DefaultListModel getUniformTableForCombat(List<RSAction> actionList, String filterSelected)
    {
-            Set<String> calculatorKeySet = calculatorMap.keySet();
-            DefaultListModel listModel = new DefaultListModel();
-            String longestName = " ";
-            double sizeOfXp = 0.0;
-            for (String getLength : calculatorKeySet)
+        DefaultListModel listModel = new DefaultListModel();
+        String longestName = " ";
+        double sizeOfXp = 0.0;
+        for (RSAction action : actionList)
+        {
+            if (action.GetDescription().length() > longestName.length())
             {
-                if (getLength.length() > longestName.length())
-                {
-                    longestName = getLength;
-                }
-                if (calculatorMap.get(getLength) > sizeOfXp)
-                {
-                    sizeOfXp = calculatorMap.get(getLength);
-                }
+                longestName = action.GetDescription();
             }
-           
-            for (String name : calculatorKeySet){
-                      String makeUniform = name;
-                      while (makeUniform.length() != longestName.length())
-                      {
-                          makeUniform = makeUniform.concat(" ");
-                      }
-                      String xpGained = " XP Gained: " +  calculatorMap.get(name);
-                      while (xpGained.length() != (" XP Gained: " + sizeOfXp).length())
-                      {
-                          xpGained = xpGained + " ";
-                      }
-                      listModel.addElement(makeUniform + xpGained + " Iterations: --");
+            if (action.GetXp() > sizeOfXp)
+            {
+                sizeOfXp = action.GetXp();
+            }
+        }
+        
+        for (RSAction action : actionList){
+            String name = action.GetDescription();
+            String makeUniform = name;
+            while (makeUniform.length() != longestName.length())
+            {
+                makeUniform = makeUniform.concat(" ");
+            }
+            String xpGained = " XP Gained: " +  action.GetXp();
+            while (xpGained.length() != (" XP Gained: " + sizeOfXp).length())
+            {
+                xpGained = xpGained + " ";
+            }
+            listModel.addElement(makeUniform + xpGained + " Iterations: --");
 
-            }
-            return listModel;
+        }
+        return listModel;
    }
    
     public int getLongestName(Map<String,Double> calculatorMap)
