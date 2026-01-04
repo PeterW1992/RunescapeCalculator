@@ -4,12 +4,14 @@ public class RSAction {
     private double _xp;
     private Integer _minimumLevel;
     private String _category;
+    private Double _actionDuration;
 
-    RSAction(String description, double xp, Integer minimumLevel, String category) {
+    RSAction(String description, double xp, Integer minimumLevel, String category, Double actionDuration) {
         _description = description;
         _xp = xp;
         _minimumLevel = minimumLevel;
         _category = category;
+        _actionDuration = actionDuration;
     }
 
     public Integer GetMinimumLevel() {
@@ -26,6 +28,10 @@ public class RSAction {
 
     public double GetXp() {
         return _xp;
+    }
+
+    public Double GetActionDuration() {
+        return _actionDuration;
     }
 
     @Override

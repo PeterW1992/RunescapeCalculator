@@ -87,18 +87,18 @@ public abstract class AbstractCalculator
       {
        if (slayerXpGained != 0.0)
        {
-       nameAndXpGained.add(new RSAction(monsterName, slayerXpGained, null,null));
+       nameAndXpGained.add(new RSAction(monsterName, slayerXpGained, null,null, null));
        }
       }
       else
       {
       if (this.getSkillName().equals("Constitution"))
       {
-          nameAndXpGained.add(new RSAction(monsterName, xpGained / 4, null,null));
+          nameAndXpGained.add(new RSAction(monsterName, xpGained / 4, null,null, null));
       }
       else
       {
-          nameAndXpGained.add(new RSAction(monsterName, xpGained, null,null));
+          nameAndXpGained.add(new RSAction(monsterName, xpGained, null,null, null));
        System.out.println("\"('"+ monsterName.replaceAll("'", "''") + "', "+ xpGained + ", " + slayerXpGained + ", " + monsterLevel +
               "), \" + ");
       }
@@ -128,6 +128,7 @@ public abstract class AbstractCalculator
             String description = null;
             Integer minimumLevel= null;
             String category = null;
+            Double actionDuration = null;
             while (currentLine != null)
             {
                 Scanner lineScanner = new Scanner(currentLine).useLocale(Locale.UK);
@@ -136,15 +137,17 @@ public abstract class AbstractCalculator
                 xpGained = Double.parseDouble(lineScanner.next().trim());
                 minimumLevel = Integer.parseInt(lineScanner.next().trim());
                 category = lineScanner.next();
+                if (lineScanner.hasNext()) {
+                    actionDuration = Double.parseDouble(lineScanner.next());
+                    System.err.println(actionDuration);
+                }
 
-                nameAndXpGained.add(new RSAction(description, xpGained, minimumLevel, category));
+                nameAndXpGained.add(new RSAction(description, xpGained, minimumLevel, category, actionDuration));
 
                 skillFilter.add(category);
                 currentLine = bufferedFileReader.readLine();
             }
             bufferedFileReader.close();
-
-            System.out.println(nameAndXpGained.size());
         }
         catch (Exception anException)
         {
@@ -152,7 +155,6 @@ public abstract class AbstractCalculator
         }
     }
 
- 
  public void readFromXpStore()
  {
        if (isRead){
@@ -180,7 +182,6 @@ public abstract class AbstractCalculator
  
   public void setStoredXPAll() throws IOException
  {
-    //StoredXPFile = new File("temp_StoredXP.txt");
     StoredXPFile = File.createTempFile("temporaryXPStore", ".txt");
     StoredXPFile.deleteOnExit();
     System.out.println(StoredXPFile);
@@ -197,7 +198,7 @@ public abstract class AbstractCalculator
      }
      catch (Exception anException)
      {
-     System.out.println("This " + anException);
+        System.out.println("This " + anException);
      }
 
  }
@@ -259,44 +260,6 @@ public abstract class AbstractCalculator
    
    public Set<String> getFilter(){
        return this.skillFilter;
-   }
-   
-   public DefaultListModel getUniformTable(List<RSAction> actions, String filterSelected)
-   {
-            DefaultListModel listModel = new DefaultListModel();
-            String longestName = " ";
-            double sizeOfXp = 0.0;
-            for (RSAction action : actions)
-            {
-                String description = action.GetDescription();
-                if (description.length() > longestName.length())
-                {
-                    longestName = description;
-                }
-                if (action.GetXp() > sizeOfXp)
-                {
-                    sizeOfXp = action.GetXp();
-                }
-            }
-           
-            for (RSAction action : actions){
-                if (action.GetCategory().startsWith(filterSelected))
-                  {
-                      String makeUniform = action.GetDescription();
-                      while (makeUniform.length() != longestName.length() - filterSelected.length())
-                      {
-                          makeUniform = makeUniform.concat(" ");
-                      }
-                      String xpGained = " XP Gained: " + action.GetXp();
-                      while (xpGained.length() != (" XP Gained: " + sizeOfXp).length())
-                      {
-                          xpGained = xpGained + " ";
-                      }
-                      listModel.addElement(makeUniform + xpGained + " Iterations: --");
-                  }
-               
-            }
-            return listModel;
    }
    
    public DefaultListModel getUniformTableForCombat(List<RSAction> actionList, String filterSelected)
@@ -365,13 +328,12 @@ public abstract class AbstractCalculator
     public int getXpRequiredForTheLevel(int level)
     {
            return this.getXpForLevels().get(level);
-        
         }
 
 
     public Map<String,Long>  getPlayerHighscores() throws  IOException
     {
- return this.storedXPMapHighscores;
+        return this.storedXPMapHighscores;
     }
  
     public void  setPlayerHighscores(String username) throws  IOException

@@ -1,13 +1,26 @@
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
 public class ActionTableModel implements TableModel {
 
-    List<RSAction> _actions;
+    List<RSActionResult> _actions;
 
-    ActionTableModel(List<RSAction> actions) {
+    ActionTableModel(List<RSActionResult> actions) {
         _actions = actions;
+    }
+
+    ActionTableModel() {
+        
+    }
+
+    public ActionTableModel populateActions(List<RSAction> actions){
+        this._actions = new ArrayList<RSActionResult>();
+        for (RSAction action : actions) {
+            this._actions.add(new RSActionResult(action, 0, 0));
+        }
+	 return this;
     }
 
     @Override
@@ -17,7 +30,7 @@ public class ActionTableModel implements TableModel {
 
     @Override
     public int getColumnCount() {
-        return 3;
+        return 5;
     }
 
     @Override
@@ -34,6 +47,9 @@ public class ActionTableModel implements TableModel {
 
             case 3:
                 return "Iterations";
+            
+            case 4:
+                return "Duration";
         }
         return null;
     }
@@ -50,7 +66,7 @@ public class ActionTableModel implements TableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        RSAction action = this._actions.get(rowIndex);
+        RSActionResult action = this._actions.get(rowIndex);
 
         switch (columnIndex) {
             case 0:
@@ -63,7 +79,10 @@ public class ActionTableModel implements TableModel {
                 return action.GetXp();
 
             case 3:
-                return 0;
+                return action.GetIterations();
+
+            case 4:
+                return action.GetDuration();
         }
 
         return null;
